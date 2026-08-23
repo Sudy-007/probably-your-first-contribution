@@ -33,6 +33,6 @@ Remember:
 - Create a Pull Request for your contribution.
 
 ## Workflow
-![alt text](Workflow.png)
+<img width="760" height="200" alt="Workflow" src="https://github.com/user-attachments/assets/89e8ffa2-3f94-4b91-a201-905092e39620" />
 
 Always learn by doing!
