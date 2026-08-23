@@ -24,10 +24,10 @@ You will make a teeny tiny change to this repository, create a Pull Request, and
 - [ ] Understand the basic Git collaboration workflow
 
 ## Your task
-Add exactly one sentence - any sentence that you like! - to `contributors.md`.
+Add exactly one sentence - any sentence that you like! - to `batch1.md` or `batch2.md`.
 
 Remember:
-- Modify `contributors.md` only.
+- Modify `batch1.md` or `batch2.md` only.
 - Do not delete or modify existing contributions.
 - Do not add personal information.
 - Create a Pull Request for your contribution.
