@@ -1,0 +1,42 @@
+name: Validate Contribution
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check changed files
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate contribution
+        run: |
+          files=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+
+          echo "Changed files:"
+          echo "$files"
+
+          count=0
+
+          for file in $files; do
+            if [ "$file" != "contributors/batch1.md" ] && [ "$file" != "contributors/batch2.md" ]; then
+              echo "❌ Invalid file changed: $file"
+              echo "Only contributors/batch1.md or contributors/batch2.md may be modified."
+              exit 1
+            fi
+
+            count=$((count + 1))
+          done
+
+          if [ "$count" -ne 1 ]; then
+            echo "❌ Please modify only one contributor file."
+            exit 1
+          fi
+
+          echo "✅ Contribution is valid."
