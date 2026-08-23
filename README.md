@@ -24,7 +24,7 @@ You will make a teeny tiny change to this repository, create a Pull Request, and
 - [ ] Understand the basic Git collaboration workflow
 
 ## Your task
-Add exactly one sentence you like to contributors.md.
+Add exactly one sentence - any sentence that you like! - to `contributors.md`.
 
 Remember:
 - Modify `contributors.md` only.
